@@ -1,0 +1,149 @@
+/* 股本私有css文件 */
+.v2_lyb_body {
+  background-color: #252530;
+  padding-bottom: 55px;
+}
+.v2_lyb_body .num_red {
+  color: #FF2F4C;
+}
+.v2_lyb_body .num_green {
+  color: #81CA9C;
+}
+.v2_lyb_body td p {
+  min-height: 20px;
+  line-height: 20px;
+}
+.v2_lyb_body .td_h_p {
+  height: 40px;
+  line-height: 20px;
+}
+.v2_lyb_body .td_title_p {
+  color: #fff;
+}
+.v2_lyb_body .td_place_60 {
+  height: 60px;
+}
+.v2_lyb_body .mainBox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: raw;
+      -ms-flex-direction: raw;
+          flex-direction: raw;
+}
+.v2_lyb_body .mainBox > * {
+  display: block;
+}
+.v2_lyb_body .mainBox table {
+  width: 100%;
+  vertical-align: middle;
+}
+.v2_lyb_body .mainBox table th,
+.v2_lyb_body .mainBox table td {
+  color: #B2BDC1;
+  font-weight: normal;
+  font-size: 12px;
+}
+.v2_lyb_body .mainBox table th {
+  height: 32px;
+  background-color: #3D3D4A;
+}
+.v2_lyb_body .mainBox table tr:last-child td {
+  border-top: 1px solid #3B3B46;
+}
+.v2_lyb_body .mainBox table tbody:last-child tr:last-child td {
+  border-bottom: 1px solid #3B3B46;
+}
+.v2_lyb_body .leftBox {
+  -webkit-flex-basis: 135px;
+      -ms-flex-preferred-size: 135px;
+          flex-basis: 135px;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+.v2_lyb_body .leftTable td {
+  padding: 10px 10px 10px 15px;
+  border-right: 1px solid #3B3B46;
+}
+.v2_lyb_body .leftTable tr:first-child td {
+  background-color: #343440;
+  font-size: 15px;
+  color: #fff;
+  height: 40px;
+  padding: 0px 0px 0px 15px;
+}
+.v2_lyb_body .leftTable th {
+  padding-left: 15px;
+  text-align: left;
+}
+.v2_lyb_body .rightBox {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow-x: hidden;
+}
+.v2_lyb_body .rightTable {
+  white-space: nowrap;
+}
+.v2_lyb_body .rightTable td {
+  padding: 10px 0px 10px 25px;
+  text-align: right;
+}
+.v2_lyb_body .rightTable td:last-child {
+  padding-right: 25px;
+}
+.v2_lyb_body .rightTable tr:first-child td {
+  background-color: #343440;
+  height: 40px;
+  padding: 0px 0px 0px 25px;
+}
+.v2_lyb_body .rightTable th {
+  padding: 0px 0px 0px 25px;
+  text-align: right;
+}
+.v2_lyb_body .fixBottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: raw;
+      -ms-flex-direction: raw;
+          flex-direction: raw;
+  background-color: #323544;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  z-index: 2;
+}
+.v2_lyb_body .fixBottom > * {
+  display: block;
+}
+.v2_lyb_body .fixBottom li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+}
+.v2_lyb_body .fixBottom li.active {
+  background-image: -webkit-linear-gradient(top, #7b9ff1, #7ebce9);
+  font-weight: bold;
+}

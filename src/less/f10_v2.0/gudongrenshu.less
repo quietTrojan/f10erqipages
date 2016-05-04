@@ -1,0 +1,47 @@
+@import "../reuseClass.less";//引入less重用class样式
+/* 股本私有css文件 */
+.v2_gdrs_body{
+  .resume_listItem(){
+    flex: 1;
+    color: #B2BDC1;
+    font-size:12px;
+    text-align: center;
+  }
+  &{
+    background-color: #252530;
+  }
+  .header{
+    &{
+      background-color: #3D3D4A;
+      .display_flex;
+    }
+    span{
+      .resume_listItem;
+      .h_line_h(32px);
+    }
+  }
+
+  .conList{
+    &{
+      margin-bottom:30px;
+    }
+    .listItem{
+      &{
+        .display_flex;
+        margin-top:30px;
+      }
+      span{
+        &{
+          .resume_listItem;
+          .h_line_h(20px);
+        }
+        &.color_red{
+          color: #FF2F4C;
+        }
+        &.color_green{
+          color: #81CA9C;
+        }
+      }
+    }
+  }
+}

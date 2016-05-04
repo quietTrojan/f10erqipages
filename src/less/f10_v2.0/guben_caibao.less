@@ -1,0 +1,240 @@
+@import "../reuseClass.less";//引入less重用class样式
+/* 股本私有css文件 */
+.v2_guben_body,.v2_caibao_body{
+  @widthRatio:94%;
+  &{
+    background-color: #252530;
+  }
+  .trendToolTip p{
+    &{
+      font-size:12px;
+      .h_line_h(20px);
+      font-weight: bold;
+    }
+    &:nth-of-type(1){
+      color: #81AEC8;
+    }
+    &:nth-of-type(2){
+      color: #EE913D;
+    }
+  }
+  .titl_h3{
+    .h_line_h(45px);
+    color: #fff;
+    font-size:16px;
+    width:@widthRatio;
+    margin: 0px auto;
+    border-bottom:1px solid #3D3D48;
+    padding-left:15px;
+  }
+  .pieSection{
+    &{
+      width:@widthRatio;
+      margin: 0px auto;
+      .display_flex;
+      padding: 20px 0px 15px 0px;
+    }
+    .pieBox{
+      width:100px;
+      height: 100px;
+      background-color: #fff;
+    }
+    .pieTitle{
+      width:50px;
+      .h_line_h(50px);
+      border-radius: 50%;
+      background-color: #53535E;
+      font-size:10px;
+      text-align: center;
+      color: #fff
+    }
+  }
+  .pieTextBox {
+    & {
+      flex: 1;
+      padding: 0px 20px;
+    }
+    >div{
+      &{
+        .display_flex;
+        color: #A5AFB3;
+        font-size:12px;
+        .h_line_h(20px);
+      }
+      span{
+        &:nth-of-type(1){
+          &{
+            text-align: left;
+            padding-left:16px;
+            position: relative;
+            flex: 2;
+          }
+          &::before{
+            content: "";
+            position: absolute;
+            height: 6px;
+            width: 6px;
+            border-radius:50%;
+            left: 0px;
+            top:7px;
+          }
+        }
+        &:nth-of-type(2){
+          text-align: right;
+          flex: 3;
+        }
+      }
+    }
+    >div:nth-of-type(1){
+      &{
+        color: #fff;
+        font-size:15px;
+        font-weight: bold;
+        .h_line_h(40px);
+      }
+      span{
+        &:nth-of-type(1){
+          &::before{
+            display: none;
+          }
+        }
+      }
+    }
+    >div:nth-of-type(2){
+      span{
+        &:nth-of-type(1){
+          &::before{
+            background-color: #CE5757;
+          }
+        }
+      }
+    }
+    >div:nth-of-type(3){
+      span{
+        &:nth-of-type(1){
+          &::before{
+            background-color: #DEB16E;
+          }
+        }
+      }
+    }
+    >div:nth-of-type(4){
+      span{
+        &:nth-of-type(1){
+          &::before{
+            background-color: #819AC9;
+          }
+        }
+      }
+    }
+  }
+  .trendCard{
+    &{
+      background-color: #2D2D3A;
+      margin-top:10px;
+      padding: 0px 3%;
+    }
+    &:first-child{
+      margin-top:0px;
+    }
+    .link_h3{
+      display: block;
+      .h_line_h(45px);
+      color: #fff;
+      font-size:16px;
+      padding: 0px 15px;
+      background:url("../../images/f10_v2/link_bg.png") no-repeat right center;
+      background-size:5.5px 10px;
+    }
+  }
+  .trendOuterBox{
+    background: -webkit-gradient(linear, 0% 0%, 0% 50%, from(#3D3D48), to(#2F2727));
+    padding: 1px;
+  }
+  .trendBox{
+    &{
+      background-color: #2D2D3A;
+    }
+    .trendTitle{
+      &{
+        .inline_block_Box(12px);
+        padding: 5px 0px 0px 0px;
+      }
+      span{
+        &{
+          .h_line_h(20px);
+          position: relative;
+          padding-left:10px;
+          margin-left:10px
+        }
+        &::before{
+          width:6px;
+          height: 6px;
+          border: 1px;
+          box-sizing: border-box;
+          border:2px solid;
+          position: absolute;
+          content: "";
+          border-radius: 50%;
+          left: 0px;
+          top:7px;
+        }
+        &:nth-of-type(1){
+          color: #81AEC8;
+          &::before{
+            border-color:#81AEC8;
+          }
+        }
+        &:nth-of-type(2){
+          color: #EE913D;;
+          &::before{
+            border-color:#EE913D;
+          }
+        }
+      }
+    }
+  }
+  .trendTag{
+    width:100%;
+    height: 200px;
+  }
+}
+.v2_guben_body{
+  padding-bottom: 10px;
+}
+.v2_caibao_body{
+  &{
+    padding-bottom:55px;
+  }
+  .fixBottom{
+    &{
+      .display_flex;
+      background-color: #323544;
+      position: fixed;
+      left: 0px;
+      bottom: 0px;
+      width: 100%;
+    }
+    li {
+      &{
+        flex: 1;
+        .h_line_h(45px);
+        color: #fff;
+        text-align: center;
+        font-size:15px;
+      }
+      &.active{
+        background-color: #7B9FF1;
+      }
+    }
+  }
+}
+/* 媒体查询 begin */
+@media screen and @iphone4Query {
+  .v2_guben_body{
+    .pieTextBox{
+      padding: 0px 10px;
+    }
+  }
+}
+/* 媒体查询 end */

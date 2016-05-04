@@ -1,0 +1,98 @@
+@import "../reuseClass.less";//引入less重用class样式
+/* 股东进出私有css文件 */
+.v2_gdjc_body{
+  &{
+    background-color:@bodyBgColor;
+    padding-top:40px;
+  }
+  .header{
+    &{
+      position: fixed;
+      top:0px;
+      left: 0px;
+      width: 100%;
+      height: @height;
+      z-index: 1;
+    }
+    @height:40px;
+    .header_ul{
+      &{
+        background-color: #3D3D4A;
+        height: @height;
+        .inline_block_Box(12px);
+        position: absolute;
+        left: 0px;
+        top:0px;
+        white-space: nowrap;
+        min-width: 100%;
+      }
+      li{
+        &{
+          margin-left:25px;
+          color: #B2BDC1;
+          .h_line_h(@height - 1);
+          border-bottom:2px solid transparent;
+          padding: 0px 3px;
+        }
+        &.active{
+          border-color:#FEEFD7;
+          font-weight: bold;
+          color: #fff
+        }
+        &:last-child{
+          margin-right:25px;
+        }
+      }
+    }
+  }
+  .listWrap{
+    /*.resume_item{
+      color: #B2BDC1;
+      box-sizing: border-box;
+    padding-left:;
+  }*/
+    .titleBox{
+      &{
+        .display_flex;
+        background-color: #343440;
+      }
+      span{
+        flex: 1;
+        .h_line_h(40px);
+        font-size:15px;
+        color: #fff;
+        padding-left:25px;
+      }
+    }
+    .listBox{
+      &{
+
+      }
+      .listItem{
+        &{
+          .display_flex;
+        }
+        li{
+          padding-left:25px;
+          color: #B2BDC1;
+          flex: 1;
+          line-height: 18px;
+          margin-top:15px;
+        }
+      }
+    }
+    .total_ul{
+      &{
+        .display_flex;
+        border-top:1px solid #3B3B46;
+        margin-top:10px;
+      }
+      li{
+        flex: 1;
+        .h_line_h(38px);
+        padding-left:25px;
+        color: #B2BDC1;
+      }
+    }
+  }
+}

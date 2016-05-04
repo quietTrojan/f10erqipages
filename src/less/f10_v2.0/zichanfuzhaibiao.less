@@ -1,0 +1,119 @@
+@import "../reuseClass.less";//引入less重用class样式
+/* 资产负债表私有css文件 */
+.v2_zcfzb_body{
+  &{
+    background-color:@bodyBgColor;
+    padding-bottom:55px;
+  }
+  .num_red{
+    color: #FF2F4C;
+  }
+  .num_green{
+    color: #81CA9C;
+  }
+  .mainBox{
+    &{
+      .display_flex;
+    }
+    table{
+      &{
+        width: 100%;
+      }
+      th,td{
+        color: #B2BDC1;
+        font-weight: normal;
+        font-size:12px;
+      }
+      tbody:last-child tr:last-child{
+        td{
+          border-bottom:1px solid #3B3B46;
+        }
+      }
+    }
+    .td_div{
+      min-height: 40px;
+      line-height: 20px;
+    }
+    tbody tr:first-child td{
+      &{
+        background-color: #343440;
+      }
+      p{
+        &:first-child{
+          font-size:15px;
+          color: #fff;
+        }
+      }
+    }
+    .leftBox{
+      &{
+        flex-basis: 135px;
+        position: relative;
+        z-index:1;
+      }
+      th{
+        height: 32px;
+        background-color: #3D3D4A;
+        padding-left:15px;
+        text-align: left;
+        border-right:1px solid #3B3B46;
+      }
+      td{
+        padding: 10px 10px 10px 15px;
+        border-right:1px solid #3B3B46;
+      }
+    }
+    .rightBox{
+      &{
+        flex: 1;
+        overflow-x: hidden;
+      }
+    }
+    .rightTable{
+      &{
+        min-width: 100%;
+        white-space: nowrap;
+      }
+      th{
+        height: 32px;
+        background-color: #3D3D4A;
+        text-align: right;
+        padding: 0px 0px 0px 25px;
+        &:last-child{
+          padding-right: 25px;
+        }
+      }
+      td{
+        text-align: right;
+        padding: 10px 0px 10px 25px;
+        &:last-child{
+          padding-right: 25px;
+        }
+      }
+    }
+  }
+  .fixBottom{
+    &{
+      .display_flex;
+      background-color: #323544;
+      position: fixed;
+      left: 0px;
+      bottom: 0px;
+      width: 100%;
+      z-index:2;
+    }
+    li {
+      &{
+        flex: 1;
+        .h_line_h(45px);
+        color: #fff;
+        text-align: center;
+        font-size:15px;
+      }
+      &.active{
+        background-image: -webkit-linear-gradient(top, #7b9ff1, #7ebce9);
+        font-weight: bold;
+      }
+    }
+  }
+}
