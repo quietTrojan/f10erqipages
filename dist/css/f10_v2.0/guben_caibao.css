@@ -163,8 +163,12 @@
   color: #fff;
   font-size: 16px;
   padding: 0px 15px;
-  background: url("../../images/f10_v2/link_bg.png") no-repeat right center;
+  background: url("../../images/f10_v2.0/link_bg.png") no-repeat right center;
   background-size: 5.5px 10px;
+}
+.v2_guben_body .trendCard .link_h3.none,
+.v2_caibao_body .trendCard .link_h3.none {
+  background-image: none;
 }
 .v2_guben_body .trendOuterBox,
 .v2_caibao_body .trendOuterBox {
@@ -174,6 +178,22 @@
 .v2_guben_body .trendBox,
 .v2_caibao_body .trendBox {
   background-color: #2D2D3A;
+  height: 225px;
+  box-sizing: border-box;
+}
+.v2_guben_body .trendBox.emptyData,
+.v2_caibao_body .trendBox.emptyData {
+  padding-top: 60px;
+}
+.v2_guben_body .trendBox .emptyPlace,
+.v2_caibao_body .trendBox .emptyPlace {
+  height: 30px;
+  line-height: 30px;
+  padding-top: 90px;
+  background: url("../../images/f10_v2.0/noData.png") no-repeat top center;
+  background-size: 88px;
+  text-align: center;
+  color: #fff;
 }
 .v2_guben_body .trendBox .trendTitle,
 .v2_caibao_body .trendBox .trendTitle {

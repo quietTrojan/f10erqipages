@@ -19,9 +19,18 @@
 }
 .v2_lyb_body .td_title_p {
   color: #fff;
+  white-space: normal;
+  word-break: break-all;
+  word-wrap: break-word;
 }
-.v2_lyb_body .td_place_60 {
-  height: 60px;
+.v2_lyb_body .td_place_div {
+  min-height: 20px;
+  line-height: 20px;
+  visibility: hidden;
+  width: 110px;
+  white-space: normal;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 .v2_lyb_body .mainBox {
   display: -webkit-box;

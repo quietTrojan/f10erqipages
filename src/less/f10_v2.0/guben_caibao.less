@@ -138,13 +138,18 @@
       margin-top:0px;
     }
     .link_h3{
-      display: block;
-      .h_line_h(45px);
-      color: #fff;
-      font-size:16px;
-      padding: 0px 15px;
-      background:url("../../images/f10_v2/link_bg.png") no-repeat right center;
-      background-size:5.5px 10px;
+      &{
+        display: block;
+        .h_line_h(45px);
+        color: #fff;
+        font-size:16px;
+        padding: 0px 15px;
+        background:url("../../images/f10_v2.0/link_bg.png") no-repeat right center;
+        background-size:5.5px 10px;
+      }
+      &.none{
+        background-image: none;
+      }
     }
   }
   .trendOuterBox{
@@ -154,6 +159,19 @@
   .trendBox{
     &{
       background-color: #2D2D3A;
+      height: 225px;
+      box-sizing: border-box;
+    }
+    &.emptyData{
+      padding-top:60px;
+    }
+    .emptyPlace{
+      .h_line_h(30px);
+      padding-top:90px;
+      background: url("../../images/f10_v2.0/noData.png") no-repeat top center;
+      background-size:88px;
+      text-align: center;
+      color: #fff;
     }
     .trendTitle{
       &{

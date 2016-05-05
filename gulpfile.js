@@ -1,6 +1,8 @@
 var gulp = require('gulp');//本地安装gulp所用到的地方
 var less = require('gulp-less');
 var prefix = require('gulp-autoprefixer');
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
 
 function handleError(err) {
     console.log(err.toString());
@@ -14,6 +16,16 @@ gulp.task('less_css', function () {
         .pipe(prefix())
         .pipe(gulp.dest('dist/css/'));
     console.log('less编译',new Date().getTime());
+});
+
+gulp.task('imagemin', function(){
+    return gulp.src('src/images/*/**')
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest('dist/images/'));
 });
 
 gulp.task('watch', function () {
