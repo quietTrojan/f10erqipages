@@ -13,8 +13,12 @@
   min-height: 20px;
   line-height: 20px;
 }
-.v2_lyb_body .td_h_p {
+.v2_lyb_body .td_h_p40 {
   height: 40px;
+  line-height: 20px;
+}
+.v2_lyb_body .td_h_p60 {
+  height: 60px;
   line-height: 20px;
 }
 .v2_lyb_body .td_title_p {
@@ -120,6 +124,9 @@
 .v2_lyb_body .rightTable th {
   padding: 0px 0px 0px 25px;
   text-align: right;
+}
+.v2_lyb_body .rightTable th:last-child {
+  padding-right: 25px;
 }
 .v2_lyb_body .fixBottom {
   display: -webkit-box;

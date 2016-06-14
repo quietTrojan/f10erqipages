@@ -5,7 +5,7 @@
   &{
     background-color: #252530;
   }
-  .trendToolTip p{
+  .trendToolTip span{
     &{
       font-size:12px;
       .h_line_h(20px);
@@ -214,7 +214,23 @@
   }
   .trendTag{
     width:100%;
-    height: 200px;
+    height: 180px;
+  }
+  .xAxisBox{
+    span{
+      &{
+        .h_line_h(20px);
+        color: #A5AFB3;
+        font-size:10px;
+      }
+      &:first-child{
+        float:left;
+      }
+      &:last-child{
+        float:right;
+      }
+    }
+
   }
 }
 .v2_guben_body{

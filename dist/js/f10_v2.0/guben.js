@@ -58,10 +58,8 @@ $(function(){
     $('.trendTag').each(function(){
         $(this).highcharts({
             chart: {
-                spacingRight: 0,
-                spacingLeft:0,
-                marginTop:0,
-                marginBottom:30,
+                spacing:0,
+                margin:0,
                 backgroundColor:'rgba(255,255,255,0)'
             },
             title: {
@@ -103,7 +101,7 @@ $(function(){
                 },
                 shared: true,
                 formatter:function(){
-                    return '<div class="trendToolTip"><p>'+this.points[0].y+'</p><p>'+this.points[1].y+'</p></div>';
+                    return '<div class="trendToolTip"><span>'+this.points[0].y+'</span><br><span>'+this.points[1].y+'</span></div>';
                 },
                 backgroundColor:null,
                 borderWidth:0,
