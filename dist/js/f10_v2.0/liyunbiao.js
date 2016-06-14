@@ -14,5 +14,7 @@ $(function(){
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
 
-    })
+    });
+    alert('ceshi_p01'+$('#ceshi_p01').height());
+    alert('ceshi_p02'+$('#ceshi_p02').height());
 });
