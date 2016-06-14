@@ -88,6 +88,8 @@
   padding: 10px 10px 10px 15px;
   border-right: 1px solid #3B3B46;
   border-bottom: 1px solid red;
+  background-color: yellow;
+  background-clip: content-box;
 }
 .v2_lyb_body .leftTable tr:first-child td {
   background-color: #343440;
@@ -114,6 +116,8 @@
   padding: 10px 0px 10px 25px;
   text-align: right;
   border-bottom: 1px solid red;
+  background-color: yellow;
+  background-clip: content-box;
 }
 .v2_lyb_body .rightTable td:last-child {
   padding-right: 25px;
