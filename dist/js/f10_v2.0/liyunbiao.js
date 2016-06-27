@@ -1,3 +1,4 @@
+
 $(function(){
     var tableScroll = new IScroll('#rightBox', {
         scrollX:true,
@@ -14,6 +15,7 @@ $(function(){
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
 
-    })
-    //unitObj.showToast("这是错误提示这是错误提示这是错误提示这是错误提示!");
+    });
+    alert('ceshi_p01'+$('#ceshi_p01').height());
+    alert('ceshi_p02'+$('#ceshi_p02').height());
 });

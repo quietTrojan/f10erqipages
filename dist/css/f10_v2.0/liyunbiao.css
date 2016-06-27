@@ -87,6 +87,15 @@
 .v2_lyb_body .leftTable td {
   padding: 10px 10px 10px 15px;
   border-right: 1px solid #3B3B46;
+  border-bottom: 1px solid red;
+  background-color: yellow;
+  background-clip: content-box;
+}
+.v2_lyb_body .leftTable td p:nth-of-type(1) {
+  background-color: blue;
+}
+.v2_lyb_body .leftTable td p:nth-of-type(2) {
+  background-color: #00ee00;
 }
 .v2_lyb_body .leftTable tr:first-child td {
   background-color: #343440;
@@ -109,19 +118,21 @@
 .v2_lyb_body .rightTable {
   white-space: nowrap;
 }
-.v2_lyb_body .rightTable tr td {
+.v2_lyb_body .rightTable td {
   padding: 10px 0px 10px 25px;
   text-align: right;
+  border-bottom: 1px solid red;
+  background-color: yellow;
+  background-clip: content-box;
 }
-.v2_lyb_body .rightTable tr td:first-child {
-  padding: 10px 10px 10px 15px !important;
-  text-align: left;
-  white-space: normal;
-  word-break: break-all;
-  word-wrap: break-word;
-}
-.v2_lyb_body .rightTable tr td:last-child {
+.v2_lyb_body .rightTable td:last-child {
   padding-right: 25px;
+}
+.v2_lyb_body .rightTable td p:nth-of-type(1) {
+  background-color: blue;
+}
+.v2_lyb_body .rightTable td p:nth-of-type(2) {
+  background-color: #00ee00;
 }
 .v2_lyb_body .rightTable tr:first-child td {
   background-color: #343440;
