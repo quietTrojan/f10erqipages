@@ -1,0 +1,174 @@
+/* 股本私有css文件 */
+.v2_lyb_body {
+  background-color: #252530;
+  padding-bottom: 55px;
+  /*.leftBox{
+    flex-basis: 135px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: relative;
+    z-index:1;
+  }
+  .leftTable{
+    td{
+      padding:10px 10px 10px 15px;
+      border-right: 1px solid #3B3B46;
+    }
+    tr:first-child td {
+      & {
+        background-color: #343440;
+        font-size: 15px;
+        color: #fff;
+        height: 40px;
+        padding: 10px 10px 10px 15px;
+      }
+    }
+    th{
+      padding-left:15px;
+      text-align: left;
+    }
+  }
+  .rightBox{
+    flex:1;
+    overflow-x: hidden;
+  }
+  .rightTable{
+    &{
+      white-space: nowrap;
+    }
+    tr{
+      td{
+        &{
+          padding: 10px 0px 10px 25px;
+          text-align: right;
+        }
+        &:first-child{
+          //width: 135px;
+          padding: 10px 10px 10px 15px !important;
+          text-align: left;
+          .breakLine;
+        }
+        &:last-child{
+          padding-right: 25px;
+        }
+      }
+    }
+    tr:first-child td {
+      &{
+        background-color: #343440;
+        height: 40px;
+        padding:10px 10px 10px 25px;
+      }
+      &:first-child{
+        font-size: 15px;
+      }
+    }
+    th{
+      &{
+        padding: 0px 0px 0px 25px;
+        text-align: right;
+      }
+      &:last-child{
+        padding-right:25px;
+      }
+    }
+  }
+  .fixBottom{
+    &{
+      .display_flex;
+      background-color: #323544;
+      position: fixed;
+      left: 0px;
+      bottom: 0px;
+      width: 100%;
+      z-index:2;
+    }
+    li {
+      &{
+        flex: 1;
+        .h_line_h(45px);
+        color: #fff;
+        text-align: center;
+        font-size:15px;
+      }
+      &.active{
+        background-image: -webkit-linear-gradient(top, #7b9ff1, #7ebce9);
+        font-weight: bold;
+      }
+    }
+  }*/
+}
+.v2_lyb_body .num_red {
+  color: #FF2F4C;
+}
+.v2_lyb_body .num_green {
+  color: #81CA9C;
+}
+.v2_lyb_body .dataTable th,
+.v2_lyb_body .dataTable td {
+  color: #B2BDC1;
+  font-weight: normal;
+  font-size: 12px;
+}
+.v2_lyb_body .dataTable th p,
+.v2_lyb_body .dataTable td p {
+  min-height: 20px;
+  line-height: 20px;
+  white-space: nowrap;
+  word-break: normal;
+  word-wrap: normal;
+  text-align: right;
+}
+.v2_lyb_body .dataTable th {
+  height: 32px;
+  background-color: #3D3D4A;
+  text-align: right;
+}
+.v2_lyb_body .dataTable th:first-child {
+  text-align: left;
+  padding-left: 15px;
+}
+.v2_lyb_body .dataTable th:first-child p {
+  text-align: left;
+}
+.v2_lyb_body .dataTable tr td {
+  padding: 10px 0px 10px 25px;
+  vertical-align: top;
+  position: relative;
+}
+.v2_lyb_body .dataTable tr td:first-child {
+  padding: 10px 10px 10px 15px;
+  border-right: 1px solid #3B3B46;
+}
+.v2_lyb_body .dataTable tr td:first-child p {
+  width: 110px;
+  white-space: normal;
+  word-break: break-all;
+  word-wrap: break-word;
+  text-align: left;
+}
+.v2_lyb_body .dataTable tr td:not(:first-child) p:nth-of-type(2) {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+}
+.v2_lyb_body .dataTable tr:first-child td {
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #343440;
+  padding: 10px 10px 10px 15px;
+}
+.v2_lyb_body .dataTable tr:last-child td {
+  border-top: 1px solid #3B3B46;
+}
+.v2_lyb_body .dataTable tbody:last-child tr:last-child td {
+  border-bottom: 1px solid #3B3B46;
+}
+.v2_lyb_body .rightBox {
+  position: relative;
+}
+.v2_lyb_body .rightBox .dataTable {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}

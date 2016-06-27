@@ -93,7 +93,7 @@
   font-size: 15px;
   color: #fff;
   height: 40px;
-  padding: 0px 0px 0px 15px;
+  padding: 10px 10px 10px 15px;
 }
 .v2_lyb_body .leftTable th {
   padding-left: 15px;
@@ -109,17 +109,27 @@
 .v2_lyb_body .rightTable {
   white-space: nowrap;
 }
-.v2_lyb_body .rightTable td {
+.v2_lyb_body .rightTable tr td {
   padding: 10px 0px 10px 25px;
   text-align: right;
 }
-.v2_lyb_body .rightTable td:last-child {
+.v2_lyb_body .rightTable tr td:first-child {
+  padding: 10px 10px 10px 15px !important;
+  text-align: left;
+  white-space: normal;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.v2_lyb_body .rightTable tr td:last-child {
   padding-right: 25px;
 }
 .v2_lyb_body .rightTable tr:first-child td {
   background-color: #343440;
   height: 40px;
-  padding: 0px 0px 0px 25px;
+  padding: 10px 10px 10px 25px;
+}
+.v2_lyb_body .rightTable tr:first-child td:first-child {
+  font-size: 15px;
 }
 .v2_lyb_body .rightTable th {
   padding: 0px 0px 0px 25px;

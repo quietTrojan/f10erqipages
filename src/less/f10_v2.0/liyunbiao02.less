@@ -11,56 +11,96 @@
   .num_green{
     color: #81CA9C;
   }
-  td p{
-    min-height: 20px;
-    line-height: 20px;
-  }
-  .td_h_p40{
-    height: 40px;
-    line-height: 20px;
-  }
-  .td_h_p60{
-    height: 60px;
-    line-height: 20px;
-  }
-  .td_title_p{
-    color: #fff;
-    .breakLine;
-  }
-  .td_place_div{
-    min-height: 20px;
-    line-height: 20px;
-    visibility: hidden;
-    width:110px;
-    .breakLine;
-  }
-  .mainBox{
+  .dataTable{
     &{
-      .display_flex;
+      //vertical-align: middle;
     }
-    table{
+    th,td{
       &{
-        width: 100%;
-        vertical-align: middle;
-      }
-      th,td{
         color: #B2BDC1;
         font-weight: normal;
         font-size:12px;
       }
-      th{
-        height: 32px;
-        background-color: #3D3D4A;
-      }
-      tr:last-child td{
-        border-top:1px solid #3B3B46;
-      }
-      tbody:last-child tr:last-child td{
-        border-bottom:1px solid #3B3B46;
+      p{
+        min-height: 20px;
+        line-height: 20px;
+        .noBreakLine;
+        text-align: right;
       }
     }
+    th{
+      &{
+        height: 32px;
+        background-color: #3D3D4A;
+        text-align: right;
+      }
+      &:first-child{
+        &{
+          text-align: left;
+          padding-left:15px;
+        }
+        p{
+          text-align: left;
+        }
+      }
+    }
+    tr{
+      td{
+        &{
+          padding: 10px 0px 10px 25px;
+          vertical-align: top;
+          position: relative;
+        }
+      }
+      td:first-child{
+        &{
+          padding: 10px 10px 10px 15px;
+          border-right: 1px solid #3B3B46;
+        }
+        p{
+          width:110px;
+          .breakLine;
+          text-align: left;
+        }
+      }
+      td:not(:first-child){
+        p{
+          &:nth-of-type(2){
+            position: absolute;
+            bottom: 10px;
+            right: 0px;
+          }
+        }
+      }
+      &:first-child{
+        td{
+          &{
+            font-size:15px;
+            color: #ffffff;
+            background-color: #343440;
+            padding: 10px 10px 10px 15px;
+          }
+        }
+      }
+      &:last-child td{
+        border-top:1px solid #3B3B46;
+      }
+    }
+    tbody:last-child tr:last-child td{
+      border-bottom:1px solid #3B3B46;
+    }
   }
-  .leftBox{
+  .rightBox{
+    &{
+      position: relative;
+    }
+    .dataTable{
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+  }
+  /*.leftBox{
     flex-basis: 135px;
     flex-grow: 0;
     flex-shrink: 0;
@@ -154,5 +194,5 @@
         font-weight: bold;
       }
     }
-  }
+  }*/
 }

@@ -15,5 +15,5 @@ $(function(){
         $(this).addClass('active');
 
     })
-    unitObj.showToast("这是错误提示这是错误提示这是错误提示这是错误提示!");
+    //unitObj.showToast("这是错误提示这是错误提示这是错误提示这是错误提示!");
 });
