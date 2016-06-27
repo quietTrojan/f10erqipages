@@ -19,13 +19,13 @@ gulp.task('less_css', function () {
 });
 
 gulp.task('imagemin', function(){
-    return gulp.src('src/images/*/**')
+    return gulp.src('src/images/**/*')
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         }))
-        .pipe(gulp.dest('dist/images/'));
+        .pipe(gulp.dest('dist/images'));
 });
 
 gulp.task('watch', function () {

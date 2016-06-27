@@ -1,6 +1,6 @@
 /* 股东进出私有css文件 */
 .v2_gdjc_body {
-  background-color: #252530;
+  background-color: #2D2D3A;
   padding-top: 40px;
 }
 .v2_gdjc_body .header {
@@ -75,6 +75,11 @@
   color: #fff;
   padding-left: 25px;
 }
+.v2_gdjc_body .listWrap .emptyData {
+  box-sizing: border-box;
+  height: 170px;
+  padding-top: 43px;
+}
 .v2_gdjc_body .listWrap .listBox .listItem {
   display: -webkit-box;
   display: -webkit-flex;
@@ -98,6 +103,10 @@
           flex: 1;
   line-height: 18px;
   margin-top: 15px;
+  width: 0;
+  white-space: normal;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 .v2_gdjc_body .listWrap .total_ul {
   display: -webkit-box;
@@ -125,3 +134,16 @@
   padding-left: 25px;
   color: #B2BDC1;
 }
+/* 媒体查询 begin */
+@media screen and (max-width: 320px) {
+  .v2_gdjc_body .listWrap .titleBox span {
+    padding-left: 15px;
+  }
+  .v2_gdjc_body .listWrap .listBox .listItem li {
+    padding-left: 15px;
+  }
+  .v2_gdjc_body .listWrap .total_ul li {
+    padding-left: 15px;
+  }
+}
+/* 媒体查询 end */

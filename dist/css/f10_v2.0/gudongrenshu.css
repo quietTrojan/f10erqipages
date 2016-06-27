@@ -8,14 +8,10 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: raw;
-      -ms-flex-direction: raw;
-          flex-direction: raw;
-}
-.v2_gdrs_body .header > * {
-  display: block;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
 }
 .v2_gdrs_body .header span {
   -webkit-box-flex: 1;
@@ -30,6 +26,7 @@
 }
 .v2_gdrs_body .conList {
   margin-bottom: 30px;
+  padding-top: 32px;
 }
 .v2_gdrs_body .conList .listItem {
   display: -webkit-box;

@@ -169,6 +169,6 @@ $(function(){
         var curIndex=$(this).index();
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
-
+        history.replaceState(null,'','http://localhost:63342/f10_v2.0/dist/caibao.html?reportId='+curIndex);
     })
 });
