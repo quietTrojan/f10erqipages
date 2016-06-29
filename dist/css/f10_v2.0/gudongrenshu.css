@@ -21,6 +21,8 @@
   color: #B2BDC1;
   font-size: 12px;
   text-align: center;
+  width: 0;
+  display: block;
   height: 32px;
   line-height: 32px;
 }
@@ -33,15 +35,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: raw;
-      -ms-flex-direction: raw;
-          flex-direction: raw;
   margin-top: 30px;
-}
-.v2_gdrs_body .conList .listItem > * {
-  display: block;
 }
 .v2_gdrs_body .conList .listItem span {
   -webkit-box-flex: 1;
@@ -51,6 +45,8 @@
   color: #B2BDC1;
   font-size: 12px;
   text-align: center;
+  width: 0;
+  display: block;
   height: 20px;
   line-height: 20px;
 }

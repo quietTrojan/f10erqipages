@@ -34,13 +34,13 @@
     &{
       width:@widthRatio;
       margin: 0px auto;
-      .display_flex;
+      display: flex;
       padding: 20px 0px 15px 0px;
     }
     .pieBox{
       width:100px;
       height: 100px;
-      background-color: #fff;
+      //background-color: #fff;
     }
     .pieTitle{
       width:50px;
@@ -56,21 +56,27 @@
     & {
       flex: 1;
       padding: 0px 20px;
+      width:0px;
+      box-sizing: border-box;
     }
     >div{
       &{
-        .display_flex;
+        display: flex;
         color: #A5AFB3;
         font-size:12px;
         .h_line_h(20px);
       }
       span{
+        &{
+          display: block;
+        }
         &:nth-of-type(1){
           &{
             text-align: left;
             padding-left:16px;
             position: relative;
             flex: 2;
+            width: 0;
           }
           &::before{
             content: "";
@@ -85,6 +91,7 @@
         &:nth-of-type(2){
           text-align: right;
           flex: 3;
+          width: 0;
         }
       }
     }
@@ -237,7 +244,7 @@
   }
   .fixBottom{
     &{
-      .display_flex;
+      display: flex;
       background-color: #323544;
       position: fixed;
       left: 0px;
@@ -251,6 +258,7 @@
         color: #fff;
         text-align: center;
         font-size:15px;
+        width: 0;
       }
       &.active{
         background-color: #7B9FF1;

@@ -11,6 +11,41 @@
   .num_green{
     color: #81CA9C;
   }
+  .td_title_p{
+    color: #ffffff;
+  }
+  .mainBox{
+    display: flex;
+  }
+  .leftBox{
+    width:135px;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+  .rightBox{
+    &{
+     /* position: absolute;
+      left: 0px;
+      top: 0px;
+      width:100%;
+      height: 100%;
+      overflow-x: hidden;
+      z-index: 1;*/
+      flex: 1;
+      width: 0px;
+      overflow-x: hidden;
+      position: relative;
+      user-select:none;
+      transform:translateZ(0);
+      -webkit-touch-callout:none;
+    }
+    .dataTable{
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      //width: 100%;
+    }
+  }
   .dataTable{
     &{
       //vertical-align: middle;
@@ -36,12 +71,13 @@
       }
       &:first-child{
         &{
-          text-align: left;
           padding-left:15px;
-        }
-        p{
           text-align: left;
         }
+      }
+      &:last-child{
+        padding-right:25px;
+        border-right: 1px solid #3B3B46;
       }
     }
     tr{
@@ -50,6 +86,15 @@
           padding: 10px 0px 10px 25px;
           vertical-align: top;
           position: relative;
+        }
+        &:last-child{
+          &{
+            padding-right:25px;
+            border-right: 1px solid #3B3B46;
+          }
+          p:nth-of-type(2){
+            right: 25px !important;
+          }
         }
       }
       td:first-child{
@@ -69,6 +114,9 @@
             position: absolute;
             bottom: 10px;
             right: 0px;
+          }
+          &:nth-of-type(3){
+            visibility: hidden;
           }
         }
       }
@@ -90,96 +138,32 @@
       border-bottom:1px solid #3B3B46;
     }
   }
-  .rightBox{
+  .emptyDataBox{
     &{
-      position: relative;
-    }
-    .dataTable{
-      position: absolute;
+      position: fixed;
       left: 0px;
       top: 0px;
+      width:100%;
+      bottom:45px;
+      background-color: #2D2D3A;
     }
-  }
-  /*.leftBox{
-    flex-basis: 135px;
-    flex-grow: 0;
-    flex-shrink: 0;
-    position: relative;
-    z-index:1;
-  }
-  .leftTable{
-    td{
-      padding:10px 10px 10px 15px;
-      border-right: 1px solid #3B3B46;
-    }
-    tr:first-child td {
-      & {
-        background-color: #343440;
-        font-size: 15px;
-        color: #fff;
-        height: 40px;
-        padding: 10px 10px 10px 15px;
-      }
-    }
-    th{
-      padding-left:15px;
-      text-align: left;
-    }
-  }
-  .rightBox{
-    flex:1;
-    overflow-x: hidden;
-  }
-  .rightTable{
-    &{
-      white-space: nowrap;
-    }
-    tr{
-      td{
-        &{
-          padding: 10px 0px 10px 25px;
-          text-align: right;
-        }
-        &:first-child{
-          //width: 135px;
-          padding: 10px 10px 10px 15px !important;
-          text-align: left;
-          .breakLine;
-        }
-        &:last-child{
-          padding-right: 25px;
-        }
-      }
-    }
-    tr:first-child td {
-      &{
-        background-color: #343440;
-        height: 40px;
-        padding:10px 10px 10px 25px;
-      }
-      &:first-child{
-        font-size: 15px;
-      }
-    }
-    th{
-      &{
-        padding: 0px 0px 0px 25px;
-        text-align: right;
-      }
-      &:last-child{
-        padding-right:25px;
-      }
+    .emptyPlace{
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      width:100%;
+      margin: -37px 0px 0px 0px;
     }
   }
   .fixBottom{
     &{
-      .display_flex;
+      display: flex;
       background-color: #323544;
       position: fixed;
       left: 0px;
       bottom: 0px;
       width: 100%;
-      z-index:2;
+      z-index: 3;
     }
     li {
       &{
@@ -188,11 +172,11 @@
         color: #fff;
         text-align: center;
         font-size:15px;
+        width: 0;
       }
       &.active{
-        background-image: -webkit-linear-gradient(top, #7b9ff1, #7ebce9);
-        font-weight: bold;
+        background-color: #7B9FF1;
       }
     }
-  }*/
+  }
 }

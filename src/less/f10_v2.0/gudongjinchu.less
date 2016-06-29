@@ -53,11 +53,13 @@
   }*/
     .titleBox{
       &{
-        .display_flex;
+        display: flex;
         background-color: #343440;
       }
       span{
         flex: 1;
+        width: 0;
+        display: block;
         .h_line_h(40px);
         font-size:15px;
         color: #fff;
@@ -68,7 +70,7 @@
       box-sizing: border-box;
       height: 170px;
       padding-top:43px;
-      //display: none;
+      display: none;
     }
     .listBox{
       &{
@@ -76,7 +78,7 @@
       }
       .listItem{
         &{
-          .display_flex;
+          display: flex;
         }
         li{
           padding-left:25px;
@@ -91,12 +93,13 @@
     }
     .total_ul{
       &{
-        .display_flex;
+        display: flex;
         border-top:1px solid #3B3B46;
         margin-top:10px;
       }
       li{
         flex: 1;
+        width: 0;
         .h_line_h(38px);
         padding-left:25px;
         color: #B2BDC1;

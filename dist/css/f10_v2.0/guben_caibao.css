@@ -41,22 +41,12 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: raw;
-      -ms-flex-direction: raw;
-          flex-direction: raw;
   padding: 20px 0px 15px 0px;
-}
-.v2_guben_body .pieSection > *,
-.v2_caibao_body .pieSection > * {
-  display: block;
 }
 .v2_guben_body .pieSection .pieBox,
 .v2_caibao_body .pieSection .pieBox {
   width: 100px;
   height: 100px;
-  background-color: #fff;
 }
 .v2_guben_body .pieSection .pieTitle,
 .v2_caibao_body .pieSection .pieTitle {
@@ -76,6 +66,8 @@
       -ms-flex: 1;
           flex: 1;
   padding: 0px 20px;
+  width: 0px;
+  box-sizing: border-box;
 }
 .v2_guben_body .pieTextBox > div,
 .v2_caibao_body .pieTextBox > div {
@@ -83,18 +75,13 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: raw;
-      -ms-flex-direction: raw;
-          flex-direction: raw;
   color: #A5AFB3;
   font-size: 12px;
   height: 20px;
   line-height: 20px;
 }
-.v2_guben_body .pieTextBox > div > *,
-.v2_caibao_body .pieTextBox > div > * {
+.v2_guben_body .pieTextBox > div span,
+.v2_caibao_body .pieTextBox > div span {
   display: block;
 }
 .v2_guben_body .pieTextBox > div span:nth-of-type(1),
@@ -106,6 +93,7 @@
   -webkit-flex: 2;
       -ms-flex: 2;
           flex: 2;
+  width: 0;
 }
 .v2_guben_body .pieTextBox > div span:nth-of-type(1)::before,
 .v2_caibao_body .pieTextBox > div span:nth-of-type(1)::before {
@@ -124,6 +112,7 @@
   -webkit-flex: 3;
       -ms-flex: 3;
           flex: 3;
+  width: 0;
 }
 .v2_guben_body .pieTextBox > div:nth-of-type(1),
 .v2_caibao_body .pieTextBox > div:nth-of-type(1) {
@@ -268,19 +257,11 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: raw;
-      -ms-flex-direction: raw;
-          flex-direction: raw;
   background-color: #323544;
   position: fixed;
   left: 0px;
   bottom: 0px;
   width: 100%;
-}
-.v2_caibao_body .fixBottom > * {
-  display: block;
 }
 .v2_caibao_body .fixBottom li {
   -webkit-box-flex: 1;
@@ -292,6 +273,7 @@
   color: #fff;
   text-align: center;
   font-size: 15px;
+  width: 0;
 }
 .v2_caibao_body .fixBottom li.active {
   background-color: #7B9FF1;
